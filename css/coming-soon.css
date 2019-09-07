@@ -220,6 +220,11 @@ video {
   z-index: 1500;
 }
 
+.grama-logo img {
+  height: auto;
+  width: 20vw;
+}
+
 @media (max-width: 768px) {
   .masthead {
     padding-top: 180px;
