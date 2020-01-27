@@ -1,0 +1,76 @@
+
+.navigation {
+    height: $nav-height;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 5;
+
+    @media only screen and (max-width: $width-sm) {
+        height: initial;
+        padding-bottom: 8vh;
+        position: relative;
+    }
+
+    &.fill {
+        background-color: $bg-color1;
+    }
+
+    .container {
+        margin: 0 auto;
+        width: $width-full;
+
+        .logo {
+            float: left;
+            height: $logo-height;
+            margin-top: ($nav-height - $logo-height) / 2;
+            width: $logo-width;
+
+            @media only screen and (max-width: $width-sm) {
+                float: none;
+                margin: 0;
+            }
+
+            img {
+                height: $logo-height;
+                width: $logo-width;
+            }
+        }
+
+        .menu {
+            float: left;
+            margin-left: 95px;
+            margin-top: ($nav-height - 24) / 2;
+
+            @media only screen and (max-width: $width-sm) {
+                float: none;
+                margin: 0;
+            }
+
+            &-item {
+                float: left;
+                margin: 0 20px;
+
+                @media only screen and (max-width: $width-sm) {
+                    float: none;
+                    margin: 20px;
+                }
+
+                &.active {
+                    font-weight: bold;
+
+                    & a {
+                        color: $fg-color2;
+                    }
+                }
+
+                a {
+                    color: $fg-color1;
+                    font-size: 18px;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+}

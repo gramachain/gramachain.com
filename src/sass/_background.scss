@@ -1,0 +1,48 @@
+
+.background {
+    background: none;
+    height: 100vh;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100vw;
+    z-index: 0;
+
+    @media only screen and (max-width: $width-sm) {
+        display: none;
+    }
+
+    .group {
+        position: absolute;
+        z-index: 1;
+
+        &-1 {
+
+        }
+
+        &-3 {
+            background-image: url('/img/group-3.png');
+            height: 1685px;
+            right: 0;
+            top: 0;
+            width: 774px;
+        }
+
+        &-6 {
+            background-image: url('/img/group-6.png');
+            height: 358px;
+            left: 0;
+            top: 1685px;
+            width: 358px;
+        }
+
+        &-7 {
+            background-image: url('/img/group-7.png');
+            height: 508px;
+            left: 0;
+            top: 2800px;
+            width: 1245px;
+        }
+    }
+}

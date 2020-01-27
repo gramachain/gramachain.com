@@ -1,0 +1,26 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import "variables";
+
+body, html {
+    background-color: $bg-color1;
+    color: $fg-color2;
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative;
+
+    a {
+        &, &:active, &:hover, &:visited {
+            color: $fg-color1;
+            cursor: pointer;
+            text-decoration: none;
+        }
+    }
+}
+
+@import "background";
+@import "navigation";
+@import "content";
+@import "clickable";

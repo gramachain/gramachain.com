@@ -1,0 +1,167 @@
+
+.content {
+    left: 50%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    transform: translateX(-50%);
+    width: $width-full;
+    z-index: 2;
+
+    @media only screen and (max-width: $width-sm) {
+        left: 0;
+        position: relative;
+        transform: none;
+        width: initial;
+    }
+
+    .section {
+        height: 840px;
+        left: 0;
+        max-height: 840px;
+        position: absolute;
+        top: 0;
+        width: $width-full;
+
+        @media only screen and (max-width: $width-sm) {
+            height: initial;
+            margin-top: 2vh;
+            max-height: 0;
+            padding: 1vh 1vw;
+            position: relative;
+            width: 100vw;
+        }
+
+        &-1 {
+            top: 0;
+        }
+
+        &-2 {
+            top: 840px;
+        }
+
+        &-3 {
+            top: 1680px;
+        }
+
+        &-4 {
+            top: 2520px;
+
+            .hero {
+                margin-left: 50% !important;
+                margin-top: 50% !important;
+                text-align: center;
+                transform: translate(-50%, -50%) !important;
+
+                .subtitle {
+                    width: initial !important;
+                }
+
+                .title {
+                    width: initial !important;
+                }
+
+                @media only screen and (max-width: $width-sm) {
+                    margin-left: 0 !important;
+                    margin-top: 0 !important;
+                    text-align: left;
+                    transform: none !important;
+
+                    .subtitle {
+                        width: initial !important;
+                    }
+
+                    .title {
+                        width: initial !important;
+                    }
+                }
+            }
+        }
+
+        .hero {
+            margin-top: 50%;
+            position: relative;
+            transform: translateY(-50%);
+            width: 670px;
+
+            @media only screen and (max-width: $width-sm) {
+                margin: 0;
+                padding: 2vh 2vw;
+                width: initial;
+
+                button {
+                    //display: none;
+                }
+            }
+
+            .subtitle {
+                color: $fg-color1;
+                font-size: 18px;
+                line-height: 24px;
+                width: 570px;
+
+                @media only screen and (max-width: $width-sm) {
+                    font-size: 16px;
+                    width: initial;
+                }
+            }
+
+            .title {
+                color: $fg-color2;
+                font-size: 60px;
+                line-height: 70px;
+                width: 570px;
+
+                @media only screen and (max-width: $width-sm) {
+                    font-size: 30px;
+                    line-height: 40px;
+                    width: initial;
+                }
+            }
+        }
+
+        .slider {
+            @media only screen and (max-width: $width-sm) {
+                margin-top: 8vh;
+            }
+
+            .slide {
+                display: flex;
+                flex: 1;
+                flex-direction: row;
+                vertical-align: middle;
+
+                @media only screen and (max-width: $width-sm) {
+                    display: block;
+                    vertical-align: top;
+                }
+
+                .hero {
+                    flex: 1;
+                    width: initial;
+                }
+
+                .image {
+                    flex: 1;
+                    margin-top: 50%;
+                    transform: translateY(-50%);
+
+                    @media only screen and (max-width: $width-sm) {
+                        margin-top: 0;
+                        transform: none;
+                    }
+
+                    img {
+                        height: auto;
+                        width: 470px;
+
+                        @media only screen and (max-width: $width-sm) {
+                            width: 90vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
