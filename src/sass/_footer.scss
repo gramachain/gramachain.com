@@ -1,20 +1,13 @@
 
-.navigation {
+.footer {
     height: $nav-height;
-    left: 0;
-    position: fixed;
-    right: 0;
-    top: 0;
-    z-index: 5;
+    position: relative;
+    z-index: 3;
 
     @media only screen and (max-width: $width-sm) {
         height: initial;
         padding-bottom: 8vh;
         position: relative;
-    }
-
-    &.fill {
-        background-color: $bg-color1;
     }
 
     .container {

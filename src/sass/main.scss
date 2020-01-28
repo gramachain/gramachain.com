@@ -7,20 +7,30 @@ body, html {
     color: $fg-color2;
     display: block;
     font-family: 'Roboto', sans-serif;
+    height: 100vh;
     margin: 0;
     padding: 0;
     position: relative;
+    width: 100vw;
+}
 
-    a {
-        &, &:active, &:hover, &:visited {
-            color: $fg-color1;
-            cursor: pointer;
-            text-decoration: none;
-        }
+#react-root {
+    height: 100vh;
+    width: 100vw;
+}
+
+a {
+    &, &:active, &:hover, &:visited {
+        color: $fg-color1;
+        cursor: pointer;
+        text-decoration: none;
     }
 }
 
 @import "background";
-@import "navigation";
+@import "footer";
 @import "content";
 @import "clickable";
+@import "hero";
+@import "navigation";
+@import "slider";

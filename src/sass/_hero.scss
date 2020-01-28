@@ -1,0 +1,36 @@
+
+.hero {
+    width: 100vw;
+
+    @media only screen and (max-width: $width-sm) {
+        width: 50vw;
+
+        button {
+            display: none;
+        }
+    }
+
+    .subtitle {
+        font-size: 18px;
+        line-height: 24px;
+
+        @media only screen and (max-width: $width-sm) {
+            font-size: 18px;
+            line-height: 24px;
+        }
+    }
+
+    .title {
+        font-size: 60px;
+        line-height: 70px;
+
+        @media only screen and (min-width: $width-sm) {
+            width: 600px;
+        }
+
+        @media only screen and (max-width: $width-sm) {
+            font-size: 24px;
+            line-height: 32px;
+        }
+    }
+}

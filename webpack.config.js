@@ -14,7 +14,7 @@ let plugins = [
         template: getPath(['src', 'template.html']),
         inject: 'body',
         meta: {
-            viewport: 'width=device-width, initial-scale=1',
+            viewport: 'width=device-width, initial-scale=1.0',
         },
         minify: PROD,
         hash: true,
