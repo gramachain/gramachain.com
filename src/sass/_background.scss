@@ -9,8 +9,12 @@
     width: 100vw;
     z-index: 0;
 
+    @media only screen and (max-width: $width-lg) {
+        opacity: 0.25;
+    }
+
     @media only screen and (max-width: $width-sm) {
-        display: none;
+        opacity: 0.05;
     }
 
     .group {
@@ -43,6 +47,10 @@
             left: 0;
             top: 2840px;
             width: 1245px;
+
+            @media only screen and (max-width: $width-sm) {
+                display: none;
+            }
         }
     }
 }

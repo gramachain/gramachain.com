@@ -23,6 +23,10 @@
         position: relative;
         width: $width-full;
 
+        @media only screen and (max-width: $width-md) {
+            width: 100vw;
+        }
+
         @media only screen and (max-width: $width-sm) {
             height: initial;
             padding: 5vh 5vw;
@@ -40,7 +44,7 @@
                 align-self: flex-start;
 
                 .hero {
-                    width: 670px;
+                    width: 570px;
                 }
             }
         }

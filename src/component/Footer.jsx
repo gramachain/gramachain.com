@@ -6,7 +6,7 @@ export default function Footer(props) {
         <div className="footer">
             <div className="container">
                 <div className="logo">
-                    <img alt="Grama" src="img/logo.png" />
+                    <img alt="Grama" src="img/logo-grama.svg" />
                 </div>
                 <div className="menu">
                     <div className="menu-item active">
