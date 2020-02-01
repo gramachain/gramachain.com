@@ -36780,7 +36780,7 @@ function Navigation(props) {
     className: "logo"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     alt: "Grama",
-    src: "img/logo.png"
+    src: "img/logo-grama.svg"
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "menu"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
