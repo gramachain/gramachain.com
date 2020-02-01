@@ -8,6 +8,7 @@
     "private": true,
     "scripts": {
         "build": "webpack --colors",
+        "generate": "node generate.js",
         "start": "webpack-dev-server --colors"
     },
     "devDependencies": {
@@ -36,6 +37,7 @@
         "react-slick": "^0.25.2",
         "redux": "^4.0.5",
         "redux-logger": "^3.0.6",
-        "redux-thunk": "^2.3.0"
+        "redux-thunk": "^2.3.0",
+        "showdown": "^1.9.1"
     }
 }
