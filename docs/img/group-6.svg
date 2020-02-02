@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="275px" height="421px" viewBox="0 0 275 421" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 60.1 (101010) - https://sketch.com -->
+    <title>77DFE305-2D49-4953-A072-C1D159F1870C@3x</title>
+    <desc>Created with sketchtool.</desc>
+    <g id="Page-1---Layouts" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Light---Article-View" transform="translate(0.000000, -1125.000000)">
+            <g id="Background" transform="translate(-66.000000, -219.000000)">
+                <g id="Group-6" transform="translate(0.000000, 1344.000000)">
+                    <path d="M341,141 L341,421 L341,421 C263.680135,421 201,358.319865 201,281 C201,203.680135 263.680135,141 341,141 Z" id="Combined-Shape" fill="#6B778D" transform="translate(271.000000, 281.000000) scale(-1, 1) rotate(180.000000) translate(-271.000000, -281.000000) "></path>
+                    <path d="M341,0 L341,280 L341,280 C263.680135,280 201,217.319865 201,140 C201,62.680135 263.680135,1.42034288e-14 341,0 Z" id="Combined-Shape" fill="#6792FF" transform="translate(271.000000, 140.000000) rotate(180.000000) translate(-271.000000, -140.000000) "></path>
+                    <rect id="Rectangle-7" fill="#17223B" transform="translate(78.500000, 280.500000) rotate(180.000000) translate(-78.500000, -280.500000) " x="0" y="202" width="157" height="157" rx="78.5"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

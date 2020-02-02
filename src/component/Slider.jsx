@@ -5,7 +5,7 @@ import Hero from './Hero'
 import IconButton from './IconButton'
 import Slick from 'react-slick'
 
-function NextArrow(props) {
+function NextArrow({ currentSlide, slideCount, ...props }) {
     return (
         <IconButton
             { ...props }
@@ -14,7 +14,7 @@ function NextArrow(props) {
     )
 }
 
-function PrevArrow(props) {
+function PrevArrow({ currentSlide, slideCount, ...props }) {
     return (
         <IconButton
             { ...props }

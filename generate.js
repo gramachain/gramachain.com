@@ -1,27 +1,50 @@
 
 const fs = require('fs')
+const moment = require('moment')
 const path = require('path')
 const showdown = require('showdown')
 
 const articlesPath = path.join(__dirname, 'articles')
 const blogPath = path.join(__dirname, 'docs', 'blog')
-const converter = new showdown.Converter()
+const converter = new showdown.Converter({
+    tables: true,
+})
 
 const getFile = name => {
     let parts = name.split('.')
     parts = parts[0].split('-')
 
+    const date = `${ parts[0] }-${ parts[1] }-${ parts[2] }`
     return {
-        date: `${ parts[0] }-${ parts[1] }-${ parts[2] }`,
-        html: '',
+        date,
         name,
         title: `${ parts.slice(3).join(' ') }`,
+        unix: moment(date, 'YYYY-MM-DD').unix(),
     }
 }
 
 const getHTML = path => {
-    const text = fs.readFileSync(path, 'utf8')
-    return converter.makeHtml(text)
+    const markdown = fs.readFileSync(path, 'utf8')
+
+    let cleanMarkdown = ''
+    let end = false
+    let start = false
+    let summary = ''
+    for (let i = 0; i < markdown.length; i++) {
+        const c = markdown.charAt(i)
+        if (c === '+' && !start) {
+            start = true
+        } else if (c === '+' && start) {
+            end = true
+        } else if (start && !end) {
+            summary += c
+        } else if (end) {
+            cleanMarkdown += c
+        }
+    }
+
+    const html = converter.makeHtml(cleanMarkdown)
+    return { html, summary }
 }
 
 fs.readdir(articlesPath, (err, files) => {
@@ -30,9 +53,19 @@ fs.readdir(articlesPath, (err, files) => {
         return
     }
 
+    const articles = {}
     files.forEach(file => {
         const f = getFile(file)
-        f.html = getHTML(path.join(articlesPath, f.name))
-        fs.writeFileSync(path.join(blogPath, f.name.replace('.md', '.html')), f.html)
+
+        const { html, summary } = getHTML(path.join(articlesPath, f.name))
+        f.html = html
+        f.summary = summary
+
+        articles[f.name] = f
+
+        //const htmlPath = `${ f.title.replace(' ', '-') }.html`
+        //fs.writeFileSync(path.join(blogPath, htmlPath), html)
     })
+
+    fs.writeFileSync(path.join(__dirname, 'src', 'articles.json'), JSON.stringify(articles))
 })

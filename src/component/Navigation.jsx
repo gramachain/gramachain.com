@@ -1,6 +1,8 @@
 
 import React from 'react'
 
+import { Link } from 'react-router-dom'
+
 export default function Navigation(props) {
     return (
         <div className={ `navigation${ props.top > 50 ? ' fill' : '' }`}>
@@ -10,16 +12,16 @@ export default function Navigation(props) {
                 </div>
                 <div className="menu">
                     <div className="menu-item active">
-                        <a href="#" onClick={ () => alert('CLICKED') }>What is Grama?</a>
+                        <Link to="/">What is Grama?</Link>
                     </div>
                     <div className="menu-item">
-                        <a href="#" onClick={ () => alert('CLICKED') }>Get Grama</a>
+                        <Link to="/">Get Grama</Link>
                     </div>
                     <div className="menu-item">
-                        <a href="#" onClick={ () => alert('CLICKED') }>Support</a>
+                        <Link to="/">Support</Link>
                     </div>
                     <div className="menu-item">
-                        <a href="#" onClick={ () => alert('CLICKED') }>Contact</a>
+                        <Link to="/">Contact</Link>
                     </div>
                 </div>
             </div>

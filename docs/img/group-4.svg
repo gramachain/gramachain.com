@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="770px" height="420px" viewBox="0 0 770 420" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 60.1 (101010) - https://sketch.com -->
+    <title>355C87CF-4E50-46C6-A1E2-09E9AE6A1449</title>
+    <desc>Created with sketchtool.</desc>
+    <g id="Page-1---Layouts" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Light---Article-View" transform="translate(-670.000000, -0.000000)">
+            <g id="Background" transform="translate(-66.000000, -219.000000)">
+                <g id="Group-4" transform="translate(736.000000, 0.000000)">
+                    <path d="M358,280 L358,560 L358,560 C280.680135,560 218,497.319865 218,420 C218,342.680135 280.680135,280 358,280 Z" id="Combined-Shape" fill="#6B778D"></path>
+                    <path d="M778,280 L778,560 L778,560 C700.680135,560 638,497.319865 638,420 C638,342.680135 700.680135,280 778,280 Z" id="Combined-Shape" fill="#FF6768" transform="translate(708.000000, 420.000000) rotate(180.000000) translate(-708.000000, -420.000000) "></path>
+                    <rect id="Rectangle-7" fill="#6B778D" x="420" y="342" width="157" height="157" rx="78.5"></rect>
+                    <rect id="Rectangle-7" fill="#17223B" x="0" y="482" width="157" height="157" rx="78.5"></rect>
+                    <path d="M638,1.13686838e-13 C638,154.63973 512.63973,280 358,280 L358,5.68434189e-14 L638,1.13686838e-13 L638,1.13686838e-13 Z" id="Combined-Shape" fill="#17223B"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

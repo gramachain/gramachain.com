@@ -27,6 +27,16 @@
 
         &-3 {
             background-image: url('/img/group-3.png');
+            background-repeat: no-repeat;
+            height: 420px;
+            right: 0;
+            top: 0;
+            width: 770px;
+        }
+
+        &-4 {
+            background-image: url('/img/group-4.svg');
+            background-repeat: no-repeat;
             height: 1685px;
             right: 0;
             top: 0;
@@ -35,6 +45,7 @@
 
         &-6 {
             background-image: url('/img/group-6.png');
+            background-repeat: no-repeat;
             height: 358px;
             left: 0;
             top: 1685px;
@@ -43,6 +54,7 @@
 
         &-7 {
             background-image: url('/img/group-7.png');
+            background-repeat: no-repeat;
             height: 508px;
             left: 0;
             top: 2840px;
@@ -51,6 +63,15 @@
             @media only screen and (max-width: $width-sm) {
                 display: none;
             }
+        }
+
+        &-8 {
+            background-image: url('/img/group-6.svg');
+            background-repeat: no-repeat;
+            height: 421px;
+            left: 0;
+            top: 1125px;
+            width: 275px;
         }
     }
 }

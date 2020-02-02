@@ -39,7 +39,7 @@ button.round {
         display: inline-block;
         position: absolute;
         right: 45%;
-        z-index: 100;
+        z-index: 3;
 
         @media only screen and (max-width: $width-sm) {
             bottom: 0;
@@ -52,7 +52,7 @@ button.round {
         display: inline-block;
         left: 45%;
         position: absolute;
-        z-index: 100;
+        z-index: 3;
 
         @media only screen and (max-width: $width-sm) {
             bottom: 0;

@@ -3,6 +3,7 @@ import { applyMiddleware, createStore } from 'redux'
 import { Provider } from 'react-redux'
 import React from 'react'
 import { render } from 'react-dom'
+import { HashRouter as Router } from 'react-router-dom'
 
 // Middleware
 import { createLogger } from 'redux-logger'
@@ -22,7 +23,9 @@ const store = createStore(
 render(
     (
         <Provider store={ store }>
-            <App />
+            <Router>
+                <App />
+            </Router>
         </Provider>
     ),
     document.getElementById('react-root'),
