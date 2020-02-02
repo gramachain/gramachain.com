@@ -67,7 +67,7 @@ export default function Slider(props) {
                 <div className="slide" key={ i }>
                     { slide }
                     <div className="image">
-                        <img alt="Grama" src="img/slide1.svg" />
+                        <img alt="Grama" src="img/slide_1.svg" />
                     </div>
                 </div>
             )) }
