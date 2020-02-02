@@ -7,7 +7,7 @@
     "license": "MIT",
     "private": true,
     "scripts": {
-        "build": "webpack --colors",
+        "build": "yarn run generate && webpack --colors",
         "generate": "node generate.js",
         "start": "webpack-dev-server --colors"
     },
