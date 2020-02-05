@@ -44918,7 +44918,7 @@ function (_React$Component) {
           return _this2.handleScrollTo(840);
         },
         buttonTitle: "Learn More",
-        subtitle: "Ipsum.",
+        subtitle: "A state-of-the-art, user friendly, powerful distributed blockchain-powered asset management system..",
         title: "Discover Grama \u2014 Asset Management"
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "section section-2"
@@ -44943,8 +44943,8 @@ function (_React$Component) {
         buttonOnClick: function buttonOnClick() {
           return alert('CLICKED');
         },
-        buttonTitle: "Get Started",
-        subtitle: "Ipsum.",
+        buttonTitle: "Download",
+        subtitle: "Download the Grama dashboard and create your account within seconds!",
         title: "Get Grama"
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "section section-5"

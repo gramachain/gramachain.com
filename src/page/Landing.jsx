@@ -18,7 +18,7 @@ export default class Landing extends React.Component {
                     <Hero
                         buttonOnClick={ () => this.handleScrollTo(840) }
                         buttonTitle="Learn More"
-                        subtitle="Ipsum."
+                        subtitle="A state-of-the-art, user friendly, powerful distributed blockchain-powered asset management system.."
                         title="Discover Grama — Asset Management" />
                 </div>
                 <div className="section section-2">
@@ -37,8 +37,8 @@ export default class Landing extends React.Component {
                 <div className="section section-4">
                     <Hero
                         buttonOnClick={ () => alert('CLICKED') }
-                        buttonTitle="Get Started"
-                        subtitle="Ipsum."
+                        buttonTitle="Download"
+                        subtitle="Download the Grama dashboard and create your account within seconds!"
                         title="Get Grama" />
                 </div>
                 <div className="section section-5">
