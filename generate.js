@@ -65,6 +65,7 @@ fs.readdir(articlesPath, (err, files) => {
 
         //const htmlPath = `${ f.title.replace(' ', '-') }.html`
         //fs.writeFileSync(path.join(blogPath, htmlPath), html)
+        console.log('Generation complete!')
     })
 
     fs.writeFileSync(path.join(__dirname, 'src', 'articles.json'), JSON.stringify(articles))
