@@ -18,7 +18,7 @@ export default class Landing extends React.Component {
                     <Hero
                         buttonOnClick={ () => this.handleScrollTo(840) }
                         buttonTitle="Learn More"
-                        subtitle="All of this text is editable. Simply click anywhere in the paragraph or heading text and start typing."
+                        subtitle="A state-of-the-art, user friendly, powerful distributed blockchain-powered asset management system.."
                         title="Discover Grama — Asset Management" />
                 </div>
                 <div className="section section-2">
@@ -37,8 +37,8 @@ export default class Landing extends React.Component {
                 <div className="section section-4">
                     <Hero
                         buttonOnClick={ () => alert('CLICKED') }
-                        buttonTitle="Get Started"
-                        subtitle="Grama Foundation is responsible for making sure that all interested parties are provided support to integrate current or new systems for usage with the Grama Network. Software architecture allows for easy integration using a modular design."
+                        buttonTitle="Download"
+                        subtitle="Download the Grama dashboard and create your account within seconds!"
                         title="Get Grama" />
                 </div>
                 <div className="section section-5">

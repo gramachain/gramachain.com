@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="778px" height="1685px" viewBox="0 0 778 1685" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60 (88103) - https://sketch.com -->
+    <title>Group 3</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1---Layouts" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Landing-Final" transform="translate(-662.000000, 0.000000)">
+            <g id="Group" transform="translate(740.000000, 1474.000000) scale(-1, 1) translate(-740.000000, -1474.000000) translate(40.000000, -75.000000)">
+                <g id="Group-3">
+                    <path d="M560,780 L560,1060 L560,1060 C482.680135,1060 420,997.319865 420,920 C420,842.680135 482.680135,780 560,780 Z" id="Combined-Shape" fill="#6792FF"></path>
+                    <path d="M140,1340 L140,1620 L140,1620 C62.680135,1620 9.46895252e-15,1557.31986 0,1480 C-9.46895252e-15,1402.68014 62.680135,1340 140,1340 Z" id="Combined-Shape" fill="#6B778D"></path>
+                    <path d="M560,1480 L560,1760 L560,1760 C482.680135,1760 420,1697.31986 420,1620 C420,1542.68014 482.680135,1480 560,1480 Z" id="Combined-Shape" fill="#FF6768" transform="translate(490.000000, 1620.000000) rotate(180.000000) translate(-490.000000, -1620.000000) "></path>
+                    <path d="M140,780 L140,1060 L140,1060 C62.680135,1060 9.46895252e-15,997.319865 0,920 C-9.46895252e-15,842.680135 62.680135,780 140,780 Z" id="Combined-Shape" fill="#FF6768" transform="translate(70.000000, 920.000000) rotate(180.000000) translate(-70.000000, -920.000000) "></path>
+                    <rect id="Rectangle-7" fill="#6B778D" x="202" y="1402" width="157" height="157" rx="78.5"></rect>
+                    <rect id="Rectangle-7" fill="#6792FF" x="481" y="1122" width="157" height="157" rx="78.5"></rect>
+                    <path d="M420,1060 C420,1214.63973 294.63973,1340 140,1340 L140,1060 L420,1060 L420,1060 Z" id="Combined-Shape" fill="#6B778D"></path>
+                    <path d="M140,79 L140,359 L140,359 C62.680135,359 9.46895252e-15,296.319865 0,219 C-9.46895252e-15,141.680135 62.680135,79 140,79 Z" id="Combined-Shape" fill="#6792FF" transform="translate(70.000000, 219.000000) scale(-1, 1) translate(-70.000000, -219.000000) "></path>
+                    <path d="M560,639 L560,919 L560,919 C482.680135,919 420,856.319865 420,779 C420,701.680135 482.680135,639 560,639 Z" id="Combined-Shape" fill="#6B778D" transform="translate(490.000000, 779.000000) scale(-1, 1) translate(-490.000000, -779.000000) "></path>
+                    <path d="M140,639 L140,919 L140,919 C62.680135,919 9.46895252e-15,856.319865 0,779 C-9.46895252e-15,701.680135 62.680135,639 140,639 Z" id="Combined-Shape" fill="#FF6768" transform="translate(70.000000, 779.000000) scale(-1, 1) rotate(180.000000) translate(-70.000000, -779.000000) "></path>
+                    <path d="M560,79 L560,359 L560,359 C482.680135,359 420,296.319865 420,219 C420,141.680135 482.680135,79 560,79 Z" id="Combined-Shape" fill="#FF6768" transform="translate(490.000000, 219.000000) scale(-1, 1) rotate(180.000000) translate(-490.000000, -219.000000) "></path>
+                    <rect id="Rectangle-7" fill="#6B778D" transform="translate(279.500000, 779.500000) scale(-1, 1) translate(-279.500000, -779.500000) " x="201" y="701" width="157" height="157" rx="78.5"></rect>
+                    <rect id="Rectangle-7" fill="#6792FF" transform="translate(572.500000, 499.500000) scale(-1, 1) translate(-572.500000, -499.500000) " x="494" y="421" width="157" height="157" rx="78.5"></rect>
+                    <rect id="Rectangle-7" fill="#17223B" transform="translate(279.500000, 78.500000) scale(-1, 1) translate(-279.500000, -78.500000) " x="201" y="0" width="157" height="157" rx="78.5"></rect>
+                    <rect id="Rectangle-7" fill="#17223B" transform="translate(699.500000, 919.500000) scale(-1, 1) translate(-699.500000, -919.500000) " x="621" y="841" width="157" height="157" rx="78.5"></rect>
+                    <path d="M420,359 C420,513.63973 294.63973,639 140,639 L140,359 L420,359 L420,359 Z" id="Combined-Shape" fill="#17223B" transform="translate(280.000000, 499.000000) scale(-1, 1) translate(-280.000000, -499.000000) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
