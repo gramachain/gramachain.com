@@ -9,7 +9,8 @@
     "scripts": {
         "build": "yarn run generate && webpack --colors",
         "generate": "node generate.js",
-        "start": "webpack-dev-server --colors"
+        "start": "webpack-dev-server --colors",
+        "test": "echo 'N/A'"
     },
     "devDependencies": {
         "@babel/core": "^7.8.3",
