@@ -43500,9 +43500,9 @@ function valueEqual(a, b) {
 /***/ }),
 
 /***/ "./node_modules/webpack/buildin/global.js":
-/*!************************************************!*\
-  !*** ./node_modules/webpack/buildin/global.js ***!
-  \************************************************/
+/*!***********************************!*\
+  !*** (webpack)/buildin/global.js ***!
+  \***********************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -43531,9 +43531,9 @@ module.exports = g;
 /***/ }),
 
 /***/ "./node_modules/webpack/buildin/harmony-module.js":
-/*!********************************************************!*\
-  !*** ./node_modules/webpack/buildin/harmony-module.js ***!
-  \********************************************************/
+/*!*******************************************!*\
+  !*** (webpack)/buildin/harmony-module.js ***!
+  \*******************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -44219,10 +44219,10 @@ function (_React$Component) {
 /*!***************************!*\
   !*** ./src/articles.json ***!
   \***************************/
-/*! exports provided: 2020-02-01-Testing-It-Out.md, default */
+/*! exports provided: 2020-02-01-Testing-It-Out.md, 2020-02-02-Testing-It-Out2.md, default */
 /***/ (function(module) {
 
-module.exports = JSON.parse("{\"2020-02-01-Testing-It-Out.md\":{\"date\":\"2020-02-01\",\"name\":\"2020-02-01-Testing-It-Out.md\",\"title\":\"Testing It Out\",\"unix\":1580515200,\"html\":\"<h1 id=\\\"testing\\\">Testing</h1>\\n<p>Some of this stuff out. Some of this stuff out. Some of this stuff out. Some of this stuff out. Some of this stuff out. Some of this stuff out. Some of this stuff out. Some of this stuff out. Some of this stuff out. Some of this stuff out. Some of this stuff out. Some of this stuff out. Some of this stuff out.</p>\\n<p>Some of this stuff out. Some of this stuff out. Some of this stuff out. Some of this stuff out. Some of this stuff out. Some of this stuff out. Some of this stuff out. Some of this stuff out.</p>\\n<h2 id=\\\"yes\\\">Yes</h2>\\n<p>Maybe this works?</p>\\n<ul>\\n<li>One</li>\\n<li>Two</li>\\n<li>Three</li>\\n</ul>\\n<h2 id=\\\"table\\\">Table</h2>\\n<table>\\n<thead>\\n<tr>\\n<th style=\\\"text-align:left;\\\">Col 1</th>\\n<th style=\\\"text-align:center;\\\">Col 2</th>\\n<th style=\\\"text-align:right;\\\">Col 3</th>\\n</tr>\\n</thead>\\n<tbody>\\n<tr>\\n<td style=\\\"text-align:left;\\\">Row 1</td>\\n<td style=\\\"text-align:center;\\\">Row 1</td>\\n<td style=\\\"text-align:right;\\\">Row 1</td>\\n</tr>\\n<tr>\\n<td style=\\\"text-align:left;\\\">Row 2</td>\\n<td style=\\\"text-align:center;\\\">Row 2</td>\\n<td style=\\\"text-align:right;\\\">Row 2</td>\\n</tr>\\n<tr>\\n<td style=\\\"text-align:left;\\\">Row 3</td>\\n<td style=\\\"text-align:center;\\\">Row 3</td>\\n<td style=\\\"text-align:right;\\\">Row 3</td>\\n</tr>\\n</tbody>\\n</table>\",\"summary\":\"This is the summary paragraph that will be included in the articles.json file that gets created during the build process.  It is important to use the plus signs you see here.\"}}");
+module.exports = JSON.parse("{\"2020-02-01-Testing-It-Out.md\":{\"date\":\"2020-02-01\",\"name\":\"2020-02-01-Testing-It-Out.md\",\"title\":\"Testing It Out\",\"unix\":1580515200,\"html\":\"<h1 id=\\\"testing\\\">Testing</h1>\\n<p>Some of this stuff out. Some of this stuff out. Some of this stuff out. Some of this stuff out. Some of this stuff out. Some of this stuff out. Some of this stuff out. Some of this stuff out. Some of this stuff out. Some of this stuff out. Some of this stuff out. Some of this stuff out. Some of this stuff out.</p>\\n<p>Some of this stuff out. Some of this stuff out. Some of this stuff out. Some of this stuff out. Some of this stuff out. Some of this stuff out. Some of this stuff out. Some of this stuff out.</p>\\n<h2 id=\\\"yes\\\">Yes</h2>\\n<p>Maybe this works?</p>\\n<ul>\\n<li>One</li>\\n<li>Two</li>\\n<li>Three</li>\\n</ul>\\n<h2 id=\\\"table\\\">Table</h2>\\n<table>\\n<thead>\\n<tr>\\n<th style=\\\"text-align:left;\\\">Col 1</th>\\n<th style=\\\"text-align:center;\\\">Col 2</th>\\n<th style=\\\"text-align:right;\\\">Col 3</th>\\n</tr>\\n</thead>\\n<tbody>\\n<tr>\\n<td style=\\\"text-align:left;\\\">Row 1</td>\\n<td style=\\\"text-align:center;\\\">Row 1</td>\\n<td style=\\\"text-align:right;\\\">Row 1</td>\\n</tr>\\n<tr>\\n<td style=\\\"text-align:left;\\\">Row 2</td>\\n<td style=\\\"text-align:center;\\\">Row 2</td>\\n<td style=\\\"text-align:right;\\\">Row 2</td>\\n</tr>\\n<tr>\\n<td style=\\\"text-align:left;\\\">Row 3</td>\\n<td style=\\\"text-align:center;\\\">Row 3</td>\\n<td style=\\\"text-align:right;\\\">Row 3</td>\\n</tr>\\n</tbody>\\n</table>\",\"summary\":\"This is the summary paragraph that will be included in the articles.json file that gets created during the build process.  It is important to use the plus signs you see here.\"},\"2020-02-02-Testing-It-Out2.md\":{\"date\":\"2020-02-02\",\"name\":\"2020-02-02-Testing-It-Out2.md\",\"title\":\"Testing It Out2\",\"unix\":1580601600,\"html\":\"<h1 id=\\\"testing2\\\">Testing 2</h1>\\n<p>Some of this stuff out. Some of this stuff out. Some of this stuff out. Some of this stuff out. Some of this stuff out. Some of this stuff out. Some of this stuff out. Some of this stuff out. Some of this stuff out. Some of this stuff out. Some of this stuff out. Some of this stuff out. Some of this stuff out.</p>\\n<p>Some of this stuff out. Some of this stuff out. Some of this stuff out. Some of this stuff out. Some of this stuff out. Some of this stuff out. Some of this stuff out. Some of this stuff out.</p>\",\"summary\":\"This is the second summary paragraph that will be included in the articles.json file that gets created during the build process.  It is important to use the plus signs you see here.\"}}");
 
 /***/ }),
 
@@ -44998,7 +44998,7 @@ module.exports = exported;
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! whatwg-fetch */"./node_modules/whatwg-fetch/fetch.js");
-module.exports = __webpack_require__(/*! C:\git\gramachain.com\src\index.js */"./src/index.js");
+module.exports = __webpack_require__(/*! /home/runner/work/gramachain.com/gramachain.com/src/index.js */"./src/index.js");
 
 
 /***/ })
