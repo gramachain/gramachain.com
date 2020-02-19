@@ -1,4 +1,4 @@
-name: Node.js CI
+name: Build and Deploy
 
 on: [push]
 
@@ -7,18 +7,28 @@ jobs:
 
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        node-version: [12.x]
-
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v1
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
       with:
-        node-version: ${{ matrix.node-version }}
-    - run: yarn install
-    - run: yarn run build --if-present
-    - run: yarn test
+        node-version: '12.x'
+        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+    - name: yarn install, build, and test
+      run: |
+        yarn install
+        yarn run build
       env:
         CI: true
+    - name: Commit files
+      run: |
+        echo ${{ github.ref }}
+        git add .
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git commit -m "automated website generation" -a | exit 0
+    - name: Push changes
+      if: github.ref == 'refs/heads/master'
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
