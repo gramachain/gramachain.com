@@ -13,6 +13,8 @@
     .subtitle {
         font-size: 18px;
         line-height: 24px;
+        font-weight: normal;
+        color: #6B778D;
 
         @media only screen and (max-width: $width-sm) {
             font-size: 18px;
