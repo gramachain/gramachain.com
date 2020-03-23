@@ -7,6 +7,10 @@ import Background from '../component/Background'
 import Footer from '../component/Footer'
 
 class Blog extends React.Component {
+    getTop = id => document.getElementById(id).offsetTop
+
+    handleScrollTo = top => window.scrollTo({ behavior: 'smooth', top })
+
     render() {
         const slug = s => s.replace(/\ /g, '-').toLowerCase()
 
@@ -39,10 +43,23 @@ class Blog extends React.Component {
                 <div className="blog blog-1">
                     <div className="menu">
                         <div className="title-of-document">{ article.title }</div>
-                        <a href="#" className="subtitle">Heading</a>
-                        <a href="#" className="subtitle">Heading</a>
-                        <a href="#" className="subtitle">Heading</a>
-                        <a href="#" className="subtitle">Heading</a>
+                        { article.headings.map(heading => {
+                            const cls = heading.slice(0, 2).toLowerCase()
+                            const title = heading.slice(3)
+                            const id = title.replace(/\ /g, '').toLowerCase()
+                            return (
+                                <a
+                                    className={ `subtitle ${ cls }` }
+                                    key={ id }
+                                    href="#"
+                                    onClick={ ev => {
+                                        ev.preventDefault()
+                                        this.handleScrollTo(this.getTop(id))
+                                    } }>
+                                    { title }
+                                </a>
+                            )
+                        }) }
                     </div>
                     { component }
                 </div>

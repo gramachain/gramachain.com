@@ -23,8 +23,37 @@ const getFile = name => {
     }
 }
 
+const getHeadings = lines => {
+    const headings = []
+
+    lines.forEach(line => {
+        if (line.slice(0, 5) === '#####') headings.push('H5.'+line.slice(5).trim())
+        else if (line.slice(0, 4) === '####') headings.push('H4.'+line.slice(4).trim())
+        else if (line.slice(0, 3) === '###') headings.push('H3.'+line.slice(3).trim())
+        else if (line.slice(0, 2) === '##') headings.push('H2.'+line.slice(2).trim())
+        else if (line.slice(0, 1) === '#') headings.push('H1.'+line.slice(1).trim())
+    })
+
+    return headings
+}
+
 const getHTML = path => {
     const markdown = fs.readFileSync(path, 'utf8')
+    const lines = []
+    let line = ''
+    for (let i = 0; i < markdown.length; i++) {
+        const c = markdown.charAt(i)
+        if (c === '\n') {
+            if (line.length) {
+                lines.push(line)
+            }
+            line = ''
+            continue
+        }
+
+        line += c
+    }
+    const headings = getHeadings(lines)
 
     let cleanMarkdown = ''
     let end = false
@@ -44,7 +73,7 @@ const getHTML = path => {
     }
 
     const html = converter.makeHtml(cleanMarkdown)
-    return { html, summary }
+    return { headings, html, summary }
 }
 
 fs.readdir(articlesPath, (err, files) => {
@@ -57,7 +86,8 @@ fs.readdir(articlesPath, (err, files) => {
     files.forEach(file => {
         const f = getFile(file)
 
-        const { html, summary } = getHTML(path.join(articlesPath, f.name))
+        const { headings, html, summary } = getHTML(path.join(articlesPath, f.name))
+        f.headings = headings
         f.html = html
         f.summary = summary
 
